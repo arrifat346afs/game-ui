@@ -109,7 +109,7 @@ const buttonVariants = cva(
         sm: "h-auto p-1.5 px-2 text-[10px] tracking-[1px]",
         lg: "h-auto p-3 px-5 text-sm tracking-[3px]",
         // Evil variants forced sizing
-        evil: "h-auto w-full px-8 py-3 text-sm",
+        evil: "h-auto w-[200px] px-4 py-1.5 text-xs",
       },
     },
     defaultVariants: {
@@ -150,14 +150,14 @@ const Button = React.forwardRef<HTMLButtonElement, CustomButtonProps>(({
       {/* Main Content Area */}
       <div className={cn(
         "relative w-full h-full flex items-center justify-center transition-all duration-400 border border-white/5",
-        isEvil ? "px-4 py-3 bg-black/40" : "px-7 py-2 rounded-lg",
+        isEvil ? "px-2 py-1.5 bg-black/40" : "px-7 py-2 rounded-lg",
         v.innerBg,
         v.textGlow,
         isEvil ? "group-hover/button:bg-black/10" : "group-hover/button:shadow-[inset_0_0_8px_rgba(255,255,255,0.1)]"
       )}>
-        {isEvil && <span className="mr-4 select-none font-light opacity-40">|</span>}
+        {isEvil && <span className="mr-2 select-none font-light opacity-40">|</span>}
         {children}
-        {isEvil && <span className="ml-4 select-none font-light opacity-40">|</span>}
+        {isEvil && <span className="ml-2 select-none font-light opacity-40">|</span>}
 
         {/* Evil Brackets (Visible only for Evil variants) */}
         {isEvil && (
