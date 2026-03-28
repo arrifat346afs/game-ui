@@ -16,7 +16,10 @@ const variantConfig = {
     outerBg: "from-[#214d58] to-[#0a1f24]",
     dot: "bg-[#244e4d]",
     dotHover: "bg-[#5edaff]",
-    textGlow: "group-hover/button:text-shadow-blue"
+    textGlow: "group-hover/button:text-shadow-blue",
+    lineGlow: "group-hover/button:shadow-[0_0_8px_3px_rgba(140,209,250,0.85)]",
+    innerGlow: "group-hover/button:shadow-[inset_0_0_18px_rgba(140,209,250,0.12)]",
+    outerGlow: "group-hover/button:shadow-[0_0_18px_5px_rgba(51,163,190,0.4)]",
   },
   secondary: {
     base: "text-[#a3ffcc]",
@@ -26,7 +29,10 @@ const variantConfig = {
     outerBg: "from-[#064e3b] to-[#022c22]",
     dot: "bg-[#065f46]",
     dotHover: "bg-[#34d399]",
-    textGlow: "group-hover/button:text-shadow-green"
+    textGlow: "group-hover/button:text-shadow-green",
+    lineGlow: "group-hover/button:shadow-[0_0_8px_3px_rgba(163,255,204,0.85)]",
+    innerGlow: "group-hover/button:shadow-[inset_0_0_18px_rgba(163,255,204,0.12)]",
+    outerGlow: "group-hover/button:shadow-[0_0_18px_5px_rgba(34,197,94,0.4)]",
   },
   destructive: {
     base: "text-[#ff8c8c]",
@@ -36,7 +42,10 @@ const variantConfig = {
     outerBg: "from-[#451a1a] to-[#1a0a0a]",
     dot: "bg-[#4e2424]",
     dotHover: "bg-[#ff5e5e]",
-    textGlow: "group-hover/button:text-shadow-red"
+    textGlow: "group-hover/button:text-shadow-red",
+    lineGlow: "group-hover/button:shadow-[0_0_8px_3px_rgba(255,140,140,0.85)]",
+    innerGlow: "group-hover/button:shadow-[inset_0_0_18px_rgba(255,140,140,0.12)]",
+    outerGlow: "group-hover/button:shadow-[0_0_18px_5px_rgba(239,68,68,0.4)]",
   },
   outline: {
     base: "text-slate-400",
@@ -46,7 +55,10 @@ const variantConfig = {
     outerBg: "from-slate-800 to-black",
     dot: "bg-slate-700",
     dotHover: "bg-slate-200",
-    textGlow: "group-hover/button:text-shadow-white"
+    textGlow: "group-hover/button:text-shadow-white",
+    lineGlow: "group-hover/button:shadow-[0_0_8px_3px_rgba(148,163,184,0.7)]",
+    innerGlow: "group-hover/button:shadow-[inset_0_0_18px_rgba(148,163,184,0.08)]",
+    outerGlow: "group-hover/button:shadow-[0_0_18px_5px_rgba(100,116,139,0.35)]",
   },
   // Evil Variants (Modified behavior)
   "evil-cyan": {
@@ -57,7 +69,10 @@ const variantConfig = {
     outerBg: "from-[#0a1f24] to-black",
     dot: "bg-[#244e4d]",
     dotHover: "bg-[#5edaff]",
-    textGlow: "group-hover/button:text-shadow-blue"
+    textGlow: "group-hover/button:text-shadow-blue",
+    lineGlow: "group-hover/button:shadow-[0_0_10px_4px_rgba(140,209,250,0.9)]",
+    innerGlow: "group-hover/button:shadow-[inset_0_0_22px_rgba(140,209,250,0.15)]",
+    outerGlow: "group-hover/button:shadow-[0_0_24px_8px_rgba(51,163,190,0.5)]",
   },
   "evil-bio": {
     base: "text-[#a3ffcc] font-mono tracking-[0.2em]",
@@ -67,7 +82,10 @@ const variantConfig = {
     outerBg: "from-[#022c22] to-black",
     dot: "bg-[#065f46]",
     dotHover: "bg-[#34d399]",
-    textGlow: "group-hover/button:text-shadow-green"
+    textGlow: "group-hover/button:text-shadow-green",
+    lineGlow: "group-hover/button:shadow-[0_0_10px_4px_rgba(163,255,204,0.9)]",
+    innerGlow: "group-hover/button:shadow-[inset_0_0_22px_rgba(163,255,204,0.15)]",
+    outerGlow: "group-hover/button:shadow-[0_0_24px_8px_rgba(34,197,94,0.5)]",
   },
   "evil-warning": {
     base: "text-[#ff8c8c] font-mono tracking-[0.2em]",
@@ -77,7 +95,10 @@ const variantConfig = {
     outerBg: "from-[#1a0a0a] to-black",
     dot: "bg-[#4e2424]",
     dotHover: "bg-[#ff5e5e]",
-    textGlow: "group-hover/button:text-shadow-red"
+    textGlow: "group-hover/button:text-shadow-red",
+    lineGlow: "group-hover/button:shadow-[0_0_10px_4px_rgba(255,140,140,0.9)]",
+    innerGlow: "group-hover/button:shadow-[inset_0_0_22px_rgba(255,140,140,0.15)]",
+    outerGlow: "group-hover/button:shadow-[0_0_24px_8px_rgba(239,68,68,0.5)]",
   },
   "evil-ghost": {
     base: "text-slate-400 font-mono tracking-[0.2em]",
@@ -87,8 +108,11 @@ const variantConfig = {
     outerBg: "from-slate-900 to-black",
     dot: "bg-slate-700",
     dotHover: "bg-slate-200",
-    textGlow: "group-hover/button:text-shadow-white"
-  }
+    textGlow: "group-hover/button:text-shadow-white",
+    lineGlow: "group-hover/button:shadow-[0_0_10px_4px_rgba(148,163,184,0.8)]",
+    innerGlow: "group-hover/button:shadow-[inset_0_0_22px_rgba(148,163,184,0.1)]",
+    outerGlow: "group-hover/button:shadow-[0_0_24px_8px_rgba(100,116,139,0.4)]",
+  },
 }
 const buttonVariants = cva(
   "group/button inline-flex shrink-0 items-center justify-center border-none bg-clip-padding transition-all outline-none select-none focus-visible:ring-2 focus-visible:ring-blue-500/30 active:translate-y-px disabled:pointer-events-none disabled:opacity-50 relative isolate overflow-visible cursor-pointer uppercase",
@@ -135,25 +159,25 @@ const Button = React.forwardRef<HTMLButtonElement, CustomButtonProps>(({
   return (
     <ButtonPrimitive
       ref={ref}
-      className={cn(buttonVariants({ variant, size: currentSize, className }), v.base)}
+      className={cn(buttonVariants({ variant, size: currentSize, className }), v.base, v.outerGlow)}
       style={{
         background: `radial-gradient(circle 120px at 50% 50%, ${v.outerBg.split(' ')[0].replace('from-', '')}, ${v.outerBg.split(' ')[1].replace('to-', '')})`,
       }}
       {...props}
     >
       {/* Animated Glowing Lines */}
-      <div className={cn("absolute top-0 left-0 h-px w-0 transition-all duration-700 group-hover/button:w-full rounded-full opacity-60", v.line, v.glow)} />
-      <div className={cn("absolute bottom-0 right-0 h-px w-0 transition-all duration-700 group-hover/button:w-full rounded-full opacity-60", v.line, v.glow)} />
-      <div className={cn("absolute top-[12px] right-0 w-px h-0 transition-all duration-700 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-60", v.line, v.glow)} />
-      <div className={cn("absolute bottom-[12px] left-0 w-px h-0 transition-all duration-700 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-60", v.line, v.glow)} />
+      <div className={cn("absolute top-0 left-0 h-px w-0 transition-all duration-700 group-hover/button:w-full rounded-full opacity-60", v.line, v.glow, v.lineGlow)} />
+      <div className={cn("absolute bottom-0 right-0 h-px w-0 transition-all duration-700 group-hover/button:w-full rounded-full opacity-60", v.line, v.glow, v.lineGlow)} />
+      <div className={cn("absolute top-[12px] right-0 w-px h-0 transition-all duration-700 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-60", v.line, v.glow, v.lineGlow)} />
+      <div className={cn("absolute bottom-[12px] left-0 w-px h-0 transition-all duration-700 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-60", v.line, v.glow, v.lineGlow)} />
 
       {/* Main Content Area */}
       <div className={cn(
         "relative w-full h-full flex items-center justify-center transition-all duration-400 border border-white/5",
-        isEvil ? "px-2 py-1.5 bg-black/40" : "px-7 py-2 rounded-lg",
+        isEvil ? "px-2 py-1.5 bg-black/40 group-hover/button:bg-black/20" : "px-7 py-2 rounded-lg",
         v.innerBg,
         v.textGlow,
-        isEvil ? "group-hover/button:bg-black/10" : "group-hover/button:shadow-[inset_0_0_8px_rgba(255,255,255,0.1)]"
+        v.innerGlow,
       )}>
         {isEvil && <span className="mr-2 select-none font-light opacity-40">|</span>}
         {children}
