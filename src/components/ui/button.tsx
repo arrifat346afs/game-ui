@@ -1,8 +1,9 @@
 /* eslint-disable react-refresh/only-export-components */
-import { Button as ButtonPrimitive } from "@base-ui/react/button"
-import { cva, type VariantProps } from "class-variance-authority"
+import { Button as ButtonPrimitive, type ButtonProps } from "@base-ui/react/button"
+import { cva} from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
+import React from "react"
 
 // Shared class string for all evil variants — colors come from CSS variables in index.css
 const EVIL_BASE = "relative border font-mono font-bold tracking-[0.2em] uppercase"
@@ -62,6 +63,8 @@ const variantConfig = {
     line: "bg-[#8cd1fa]",
     innerBg: "bg-black/40",
     outerBg: "from-[#0a1f24] to-black",
+    dot: "bg-[#244e4d]",
+    dotHover: "bg-[#5edaff]",
     textGlow: "group-hover/button:text-shadow-blue"
   },
   "evil-bio": {
@@ -70,6 +73,8 @@ const variantConfig = {
     line: "bg-[#a3ffcc]",
     innerBg: "bg-black/40",
     outerBg: "from-[#022c22] to-black",
+    dot: "bg-[#065f46]",
+    dotHover: "bg-[#34d399]",
     textGlow: "group-hover/button:text-shadow-green"
   },
   "evil-warning": {
@@ -78,6 +83,8 @@ const variantConfig = {
     line: "bg-[#ff8c8c]",
     innerBg: "bg-black/40",
     outerBg: "from-[#1a0a0a] to-black",
+    dot: "bg-[#4e2424]",
+    dotHover: "bg-[#ff5e5e]",
     textGlow: "group-hover/button:text-shadow-red"
   },
   "evil-ghost": {
@@ -86,6 +93,8 @@ const variantConfig = {
     line: "bg-slate-400",
     innerBg: "bg-black/20",
     outerBg: "from-slate-900 to-black",
+    dot: "bg-slate-700",
+    dotHover: "bg-slate-200",
     textGlow: "group-hover/button:text-shadow-white"
   }
 }
