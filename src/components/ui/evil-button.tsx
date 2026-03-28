@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes } from "react"
+import { type ButtonHTMLAttributes } from "react"
 import { cn } from "@/lib/utils"
 
 type EvilVariant = "cyan" | "bio" | "warning" | "ghost"
@@ -78,25 +78,25 @@ export function EvilButton({
       {/* Corner brackets */}
       <span
         className={cn(
-          "absolute -top-[2px] -left-[2px] h-3 w-3 border-t-[2px] border-l-[2px]",
+          "absolute -top-[2px] -left-[2px] h-3 w-3 border-t-2 border-l-2",
           v.corner,
         )}
       />
       <span
         className={cn(
-          "absolute -top-[2px] -right-[2px] h-3 w-3 border-t-[2px] border-r-[2px]",
+          "absolute -top-[2px] -right-[2px] h-3 w-3 border-t-2 border-r-2",
           v.corner,
         )}
       />
       <span
         className={cn(
-          "absolute -bottom-[2px] -left-[2px] h-3 w-3 border-b-[2px] border-l-[2px]",
+          "absolute -bottom-[2px] -left-[2px] h-3 w-3 border-b-2 border-l-2",
           v.corner,
         )}
       />
       <span
         className={cn(
-          "absolute -bottom-[2px] -right-[2px] h-3 w-3 border-b-[2px] border-r-[2px]",
+          "absolute -bottom-[2px] -right-[2px] h-3 w-3 border-b-2 border-r-2",
           v.corner,
         )}
       />
