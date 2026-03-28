@@ -141,8 +141,8 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
       {/* Animated Glowing Lines */}
       <div className={cn("absolute top-0 left-0 h-px w-0 transition-all duration-700 group-hover/button:w-full rounded-full opacity-60", v.line, v.glow)} />
       <div className={cn("absolute bottom-0 right-0 h-px w-0 transition-all duration-700 group-hover/button:w-full rounded-full opacity-60", v.line, v.glow)} />
-      <div className={cn("absolute top-[12px] right-0 w-[1px] h-0 transition-all duration-700 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-60", v.line, v.glow)} />
-      <div className={cn("absolute bottom-[12px] left-0 w-[1px] h-0 transition-all duration-700 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-60", v.line, v.glow)} />
+      <div className={cn("absolute top-[12px] right-0 w-px h-0 transition-all duration-700 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-60", v.line, v.glow)} />
+      <div className={cn("absolute bottom-[12px] left-0 w-px h-0 transition-all duration-700 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-60", v.line, v.glow)} />
 
       {/* Main Content Area */}
       <div className={cn(
@@ -169,10 +169,10 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
         {/* Standard Sci-Fi Notches (Visible only for non-Evil variants) */}
         {!isEvil && (
           <>
-            <div className="absolute top-[-1px] left-[-1px] w-0 h-0 border-t-[9px] border-r-[9px] border-r-transparent border-t-black" />
-            <div className="absolute top-[-1px] right-[-1px] w-0 h-0 border-t-[9px] border-l-[9px] border-l-transparent border-t-black" />
-            <div className="absolute bottom-[-1px] left-[-1px] w-0 h-0 border-b-[9px] border-r-[9px] border-r-transparent border-b-black" />
-            <div className="absolute bottom-[-1px] right-[-1px] w-0 h-0 border-b-[9px] border-l-[9px] border-l-transparent border-b-black" />
+            <div className="absolute -top-px -left-px w-0 h-0 border-t-[9px] border-r-[9px] border-r-transparent border-t-black" />
+            <div className="absolute -top-px -right-px w-0 h-0 border-t-[9px] border-l-[9px] border-l-transparent border-t-black" />
+            <div className="absolute -bottom-px -left-px w-0 h-0 border-b-[9px] border-r-[9px] border-r-transparent border-b-black" />
+            <div className="absolute -bottom-px -right-px w-0 h-0 border-b-[9px] border-l-[9px] border-l-transparent border-b-black" />
           </>
         )}
       </div>
@@ -180,10 +180,10 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
       {/* Standard Sci-Fi Masking (Visible only for non-Evil variants) */}
       {!isEvil && (
         <>
-          <div className="absolute top-[-1px] left-[-1px] w-0 h-0 border-t-[13px] border-t-black border-r-[13px] border-r-transparent pointer-events-none" />
-          <div className="absolute top-[-1px] right-[-1px] w-0 h-0 border-t-[13px] border-t-black border-l-[13px] border-l-transparent pointer-events-none" />
-          <div className="absolute bottom-[-1px] left-[-1px] w-0 h-0 border-b-[13px] border-b-black border-r-[13px] border-r-transparent pointer-events-none" />
-          <div className="absolute bottom-[-1px] right-[-1px] w-0 h-0 border-b-[13px] border-b-black border-l-[13px] border-l-transparent pointer-events-none" />
+          <div className="absolute -top-px -left-px w-0 h-0 border-t-13 border-t-black border-r-13 border-r-transparent pointer-events-none" />
+          <div className="absolute -top-px -right-px w-0 h-0 border-t-13 border-t-black border-l-13 border-l-transparent pointer-events-none" />
+          <div className="absolute -bottom-px -left-px w-0 h-0 border-b-13 border-b-black border-r-13 border-r-transparent pointer-events-none" />
+          <div className="absolute -bottom-px -right-px w-0 h-0 border-b-13 border-b-black border-l-13 border-l-transparent pointer-events-none" />
         </>
       )}
 
