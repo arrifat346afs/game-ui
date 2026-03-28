@@ -6,14 +6,14 @@ export function App() {
       {/* Row 1 */}
       <div className="flex flex-wrap items-center justify-center gap-20">
         <div className="flex w-60 flex-col items-center gap-4">
-          <Button variant="evil-cyan">Initialize Link</Button>
+          <Button variant="evil-cyan">Initialize</Button>
           <span className="font-mono text-[10px] tracking-widest text-[#334155]">
             TYPE: <span className="text-[#334155]">PRIMARY_CYAN</span>
           </span>
         </div>
 
         <div className="flex w-60 flex-col items-center gap-4">
-          <Button variant="evil-bio">Sync Database</Button>
+          <Button variant="evil-bio">Sync </Button>
           <span className="font-mono text-[10px] tracking-widest text-[#334155]">
             TYPE: <span className="text-[#334155]">SECONDARY_BIO</span>
           </span>
@@ -23,14 +23,14 @@ export function App() {
       {/* Row 2 */}
       <div className="flex flex-wrap items-center justify-center gap-20">
         <div className="flex w-60 flex-col items-center gap-4">
-          <Button variant="evil-warning">Purge Memory</Button>
+          <Button variant="evil-warning">Purge </Button>
           <span className="font-mono text-[10px] tracking-widest text-[#334155]">
             TYPE: <span className="text-[#334155]">WARNING_CRITICAL</span>
           </span>
         </div>
 
         <div className="flex w-60 flex-col items-center gap-4">
-          <Button variant="evil-ghost">Guest Access</Button>
+          <Button variant="evil-ghost">Guest </Button>
           <span className="font-mono text-[10px] tracking-widest text-[#334155]">
             TYPE: <span className="text-[#334155]">NEUTRAL_GHOST</span>
           </span>
