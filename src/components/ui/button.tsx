@@ -177,8 +177,9 @@ const Button = React.forwardRef<HTMLButtonElement, CustomButtonProps>(({
 
       {/* Main Content Area */}
       <div className={cn(
-        "relative w-full h-full flex items-center justify-center transition-all duration-400 border border-white/5",
-        isEvil ? "px-2 py-1.5 bg-black/40 group-hover/button:bg-black/20" : "px-7 py-2 rounded-lg",
+        "relative w-full h-full flex items-center justify-center transition-all duration-400 border",
+        isEvil ? "px-2 py-1.5 bg-black/40 group-hover/button:bg-black/20" : "px-7 py-2 rounded-lg border-white/5",
+        isEvil && (v as { borderColor?: string }).borderColor,
         v.innerBg,
         v.textGlow,
         v.innerGlow,
