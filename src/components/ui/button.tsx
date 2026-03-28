@@ -5,15 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 import React from "react"
 
-// Shared class string for all evil variants — colors come from CSS variables in index.css
-// const EVIL_BASE = "relative border font-mono font-bold tracking-[0.2em] uppercase"
 
-// const EVIL_VARIANT_MAP = {
-//   "evil-cyan":    "cyan",
-//   "evil-bio":     "bio",
-//   "evil-warning": "warning",
-//   "evil-ghost":   "ghost",
-// } as const
 const variantConfig = {
   // Standard Sci-Fi Variants
   default: {
