@@ -19,7 +19,7 @@ const variantConfig = {
     textGlow: "group-hover/button:text-shadow-blue",
     lineGlow: "group-hover/button:shadow-[0_0_8px_3px_rgba(140,209,250,0.85)]",
     innerGlow: "group-hover/button:shadow-[inset_0_0_18px_rgba(140,209,250,0.12)]",
-    outerGlow: "group-hover/button:shadow-[0_0_18px_5px_rgba(51,163,190,0.4)]",
+    outerGlow: "hover:shadow-[0_0_18px_5px_rgba(51,163,190,0.4)]",
   },
   secondary: {
     base: "text-[#a3ffcc]",
@@ -32,7 +32,7 @@ const variantConfig = {
     textGlow: "group-hover/button:text-shadow-green",
     lineGlow: "group-hover/button:shadow-[0_0_8px_3px_rgba(163,255,204,0.85)]",
     innerGlow: "group-hover/button:shadow-[inset_0_0_18px_rgba(163,255,204,0.12)]",
-    outerGlow: "group-hover/button:shadow-[0_0_18px_5px_rgba(34,197,94,0.4)]",
+    outerGlow: "hover:shadow-[0_0_18px_5px_rgba(34,197,94,0.4)]",
   },
   destructive: {
     base: "text-[#ff8c8c]",
@@ -45,7 +45,7 @@ const variantConfig = {
     textGlow: "group-hover/button:text-shadow-red",
     lineGlow: "group-hover/button:shadow-[0_0_8px_3px_rgba(255,140,140,0.85)]",
     innerGlow: "group-hover/button:shadow-[inset_0_0_18px_rgba(255,140,140,0.12)]",
-    outerGlow: "group-hover/button:shadow-[0_0_18px_5px_rgba(239,68,68,0.4)]",
+    outerGlow: "hover:shadow-[0_0_18px_5px_rgba(239,68,68,0.4)]",
   },
   outline: {
     base: "text-slate-400",
@@ -58,7 +58,7 @@ const variantConfig = {
     textGlow: "group-hover/button:text-shadow-white",
     lineGlow: "group-hover/button:shadow-[0_0_8px_3px_rgba(148,163,184,0.7)]",
     innerGlow: "group-hover/button:shadow-[inset_0_0_18px_rgba(148,163,184,0.08)]",
-    outerGlow: "group-hover/button:shadow-[0_0_18px_5px_rgba(100,116,139,0.35)]",
+    outerGlow: "hover:shadow-[0_0_18px_5px_rgba(100,116,139,0.35)]",
   },
   // Evil Variants (Modified behavior)
   "evil-cyan": {
@@ -71,8 +71,9 @@ const variantConfig = {
     dotHover: "bg-[#5edaff]",
     textGlow: "group-hover/button:text-shadow-blue",
     lineGlow: "group-hover/button:shadow-[0_0_10px_4px_rgba(140,209,250,0.9)]",
-    innerGlow: "group-hover/button:shadow-[inset_0_0_22px_rgba(140,209,250,0.15)]",
-    outerGlow: "group-hover/button:shadow-[0_0_24px_8px_rgba(51,163,190,0.5)]",
+    innerGlow: "group-hover/button:shadow-[inset_0_0_22px_rgba(140,209,250,0.18)]",
+    outerGlow: "hover:shadow-[0_0_18px_5px_rgba(140,209,250,0.6),0_0_50px_18px_rgba(51,163,190,0.3)]",
+    borderColor: "border-[#8cd1fa]/25 hover:border-[#8cd1fa]/80",
   },
   "evil-bio": {
     base: "text-[#a3ffcc] font-mono tracking-[0.2em]",
@@ -84,8 +85,9 @@ const variantConfig = {
     dotHover: "bg-[#34d399]",
     textGlow: "group-hover/button:text-shadow-green",
     lineGlow: "group-hover/button:shadow-[0_0_10px_4px_rgba(163,255,204,0.9)]",
-    innerGlow: "group-hover/button:shadow-[inset_0_0_22px_rgba(163,255,204,0.15)]",
-    outerGlow: "group-hover/button:shadow-[0_0_24px_8px_rgba(34,197,94,0.5)]",
+    innerGlow: "group-hover/button:shadow-[inset_0_0_22px_rgba(163,255,204,0.18)]",
+    outerGlow: "hover:shadow-[0_0_18px_5px_rgba(163,255,204,0.6),0_0_50px_18px_rgba(34,197,94,0.3)]",
+    borderColor: "border-[#a3ffcc]/25 hover:border-[#a3ffcc]/80",
   },
   "evil-warning": {
     base: "text-[#ff8c8c] font-mono tracking-[0.2em]",
@@ -97,8 +99,9 @@ const variantConfig = {
     dotHover: "bg-[#ff5e5e]",
     textGlow: "group-hover/button:text-shadow-red",
     lineGlow: "group-hover/button:shadow-[0_0_10px_4px_rgba(255,140,140,0.9)]",
-    innerGlow: "group-hover/button:shadow-[inset_0_0_22px_rgba(255,140,140,0.15)]",
-    outerGlow: "group-hover/button:shadow-[0_0_24px_8px_rgba(239,68,68,0.5)]",
+    innerGlow: "group-hover/button:shadow-[inset_0_0_22px_rgba(255,140,140,0.18)]",
+    outerGlow: "hover:shadow-[0_0_18px_5px_rgba(255,140,140,0.6),0_0_50px_18px_rgba(239,68,68,0.3)]",
+    borderColor: "border-[#ff8c8c]/25 hover:border-[#ff8c8c]/80",
   },
   "evil-ghost": {
     base: "text-slate-400 font-mono tracking-[0.2em]",
@@ -110,8 +113,9 @@ const variantConfig = {
     dotHover: "bg-slate-200",
     textGlow: "group-hover/button:text-shadow-white",
     lineGlow: "group-hover/button:shadow-[0_0_10px_4px_rgba(148,163,184,0.8)]",
-    innerGlow: "group-hover/button:shadow-[inset_0_0_22px_rgba(148,163,184,0.1)]",
-    outerGlow: "group-hover/button:shadow-[0_0_24px_8px_rgba(100,116,139,0.4)]",
+    innerGlow: "group-hover/button:shadow-[inset_0_0_22px_rgba(148,163,184,0.12)]",
+    outerGlow: "hover:shadow-[0_0_18px_5px_rgba(148,163,184,0.5),0_0_50px_18px_rgba(100,116,139,0.25)]",
+    borderColor: "border-slate-400/25 hover:border-slate-400/80",
   },
 }
 const buttonVariants = cva(
