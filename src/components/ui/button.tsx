@@ -51,7 +51,7 @@ const buttonVariants = cva(
     compoundVariants: [
       {
         variant: ["evil-cyan", "evil-bio", "evil-warning", "evil-ghost"],
-        class: "h-auto px-8 py-3 text-sm",
+        class: "h-auto w-full px-8 py-3 text-sm",
       },
     ],
     defaultVariants: {
