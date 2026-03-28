@@ -1,19 +1,19 @@
 /* eslint-disable react-refresh/only-export-components */
 import { Button as ButtonPrimitive, type ButtonProps } from "@base-ui/react/button"
-import { cva} from "class-variance-authority"
+import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
 import React from "react"
 
 // Shared class string for all evil variants — colors come from CSS variables in index.css
-const EVIL_BASE = "relative border font-mono font-bold tracking-[0.2em] uppercase"
+// const EVIL_BASE = "relative border font-mono font-bold tracking-[0.2em] uppercase"
 
-const EVIL_VARIANT_MAP = {
-  "evil-cyan":    "cyan",
-  "evil-bio":     "bio",
-  "evil-warning": "warning",
-  "evil-ghost":   "ghost",
-} as const
+// const EVIL_VARIANT_MAP = {
+//   "evil-cyan":    "cyan",
+//   "evil-bio":     "bio",
+//   "evil-warning": "warning",
+//   "evil-ghost":   "ghost",
+// } as const
 const variantConfig = {
   // Standard Sci-Fi Variants
   default: {
@@ -127,7 +127,9 @@ const buttonVariants = cva(
   }
 )
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(({
+type CustomButtonProps = ButtonProps & VariantProps<typeof buttonVariants>
+
+const Button = React.forwardRef<HTMLButtonElement, CustomButtonProps>(({
   className,
   variant = "default",
   size = "default",
