@@ -82,10 +82,10 @@ function Button({
     >
       {evilVariant ? (
         <>
-          <div className={cn("absolute top-0 left-0 h-px w-0 transition-all duration-500 group-hover/button:w-full rounded-full opacity-70", v.line, v.glow)} />
-          <div className={cn("absolute bottom-0 right-0 h-px w-0 transition-all duration-500 group-hover/button:w-full rounded-full opacity-70", v.line, v.glow)} />
-          <div className={cn("absolute top-[12px] right-0 w-px h-0 transition-all duration-500 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-70", v.line, v.glow)} />
-          <div className={cn("absolute bottom-[12px] left-0 w-px h-0 transition-all duration-500 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-70", v.line, v.glow)} />
+          <div className={cn("absolute top-0 left-0 h-px w-0 transition-all duration-500 group-hover/button:w-full rounded-full opacity-70", `evil-line-${evilVariant}`, `evil-glow-${evilVariant}`)} />
+          <div className={cn("absolute bottom-0 right-0 h-px w-0 transition-all duration-500 group-hover/button:w-full rounded-full opacity-70", `evil-line-${evilVariant}`, `evil-glow-${evilVariant}`)} />
+          <div className={cn("absolute top-[12px] right-0 w-px h-0 transition-all duration-500 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-70", `evil-line-${evilVariant}`, `evil-glow-${evilVariant}`)} />
+          <div className={cn("absolute bottom-[12px] left-0 w-px h-0 transition-all duration-500 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-70", `evil-line-${evilVariant}`, `evil-glow-${evilVariant}`)} />
           {/* Corner brackets */}
           <span className="absolute -top-[2px] -left-[2px] h-3 w-3 border-t-2 border-l-2 border-current" />
           <span className="absolute -top-[2px] -right-[2px] h-3 w-3 border-t-2 border-r-2 border-current" />
