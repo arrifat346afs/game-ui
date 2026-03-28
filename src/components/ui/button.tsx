@@ -170,10 +170,10 @@ const Button = React.forwardRef<HTMLButtonElement, CustomButtonProps>(({
       {...props}
     >
       {/* Animated Glowing Lines */}
-      <div className={cn("absolute top-0 left-0 h-px w-0 transition-all duration-700 group-hover/button:w-full rounded-full opacity-60", v.line, v.glow, v.lineGlow)} />
-      <div className={cn("absolute bottom-0 right-0 h-px w-0 transition-all duration-700 group-hover/button:w-full rounded-full opacity-60", v.line, v.glow, v.lineGlow)} />
-      <div className={cn("absolute top-[12px] right-0 w-px h-0 transition-all duration-700 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-60", v.line, v.glow, v.lineGlow)} />
-      <div className={cn("absolute bottom-[12px] left-0 w-px h-0 transition-all duration-700 group-hover/button:h-[calc(100%-24px)] rounded-full opacity-60", v.line, v.glow, v.lineGlow)} />
+      <div className={cn("absolute top-0 left-0 h-px w-0 transition-all duration-700 group-hover/button:w-full rounded-full ", v.line, v.glow, v.lineGlow)} />
+      <div className={cn("absolute bottom-0 right-0 h-px w-0 transition-all duration-700 group-hover/button:w-full rounded-full ", v.line, v.glow, v.lineGlow)} />
+      <div className={cn("absolute top-[12px] right-0 w-px h-0 transition-all duration-700 group-hover/button:h-[calc(100%-24px)] rounded-full ", v.line, v.glow, v.lineGlow)} />
+      <div className={cn("absolute bottom-[12px] left-0 w-px h-0 transition-all duration-700 group-hover/button:h-[calc(100%-24px)] rounded-full ", v.line, v.glow, v.lineGlow)} />
 
       {/* Main Content Area */}
       <div className={cn(
