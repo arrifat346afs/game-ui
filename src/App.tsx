@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 
 export function App() {
   return (
-    <div className="flex min-h-svh  items-center justify-center gap-16 bg-black p-12">
+    <div className="flex min-h-svh  items-center justify-center gap-16 p-12">
       {/* Row 1 */}
       <Button variant="default">Default</Button>
       <Button variant="outline">Outline</Button>
