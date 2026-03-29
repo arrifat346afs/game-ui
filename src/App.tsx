@@ -5,10 +5,6 @@ export function App() {
     <div className="flex min-h-svh  items-center justify-center gap-16 p-12">
       {/* Row 1 */}
       <Button variant="default">Default</Button>
-      <Button variant="outline">Outline</Button>
-      <Button variant="secondary">Secondary</Button>
-      <Button variant="ghost">Ghost</Button>
-      <Button variant="destructive">Destructive</Button>
      
     </div>
   )
