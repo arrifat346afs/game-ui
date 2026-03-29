@@ -154,8 +154,8 @@
 
   --shadow-inset:
     1px 1px 2px var(--shadow-color), -1px -1px 2px var(--shadow-color-light),
-    inset 2px 2px 6px var(--shadow-color),
-    inset -2px -2px 6px var(--shadow-color-light);
+    inset 2px 2px 3px var(--shadow-color),
+    inset -2px -2px 3px var(--shadow-color-light);
 }
 
 .dark {
