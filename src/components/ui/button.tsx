@@ -22,6 +22,8 @@ const buttonVariants = cva(
         neu: "bg-[var(--neu-bg)] text-[var(--foreground)] shadow-[6px_6px_12px_color-mix(in_oklch,var(--neu-bg)_40%,black),-6px_-6px_12px_color-mix(in_oklch,var(--neu-bg)_40%,white)] hover:shadow-[8px_8px_16px_color-mix(in_oklch,var(--neu-bg)_40%,black),-8px_-8px_16px_color-mix(in_oklch,var(--neu-bg)_40%,white)] focus-visible:ring-2 focus-visible:ring-ring/50 active:translate-y-0 active:shadow-[inset_4px_4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,black),inset_-4px_-4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,white)] [&_svg]:text-[var(--foreground)]",
         "neu-pressed":
           "bg-[var(--neu-bg)] text-[var(--foreground)] shadow-[inset_4px_4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,black),inset_-4px_-4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,white)] hover:shadow-[inset_5px_5px_10px_color-mix(in_oklch,var(--neu-bg)_40%,black),inset_-5px_-5px_10px_color-mix(in_oklch,var(--neu-bg)_40%,white)] focus-visible:ring-2 focus-visible:ring-ring/50 [&_svg]:text-[var(--foreground)]",
+        "neu-filled":
+          "shadow-[6px_6px_12px_color-mix(in_oklch,oklch(1 0 0)_40%,black),-6px_-6px_12px_color-mix(in_oklch,oklch(1 0 0)_40%,white)] hover:shadow-[8px_8px_16px_color-mix(in_oklch,oklch(1 0 0)_40%,black),-8px_-8px_16px_color-mix(in_oklch,oklch(1 0 0)_40%,white)] active:shadow-[inset_4px_4px_8px_color-mix(in_oklch,oklch(1 0 0)_40%,black),inset_-4px_-4px_8px_color-mix(in_oklch,oklch(1 0 0)_40%,white)] bg-primary text-primary-foreground focus-visible:ring-2 focus-visible:ring-ring/50 active:translate-y-0 [&_svg]:text-primary-foreground",
       },
       size: {
         default:
