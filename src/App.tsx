@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import Nave from "./components/Nave"
 
-export function App() {
+export default function App() {
   return (
     <main className="flex gap-2 p-4">
       <Nave />
@@ -15,4 +15,4 @@ export function App() {
   )
 }
 
-export default App
+
