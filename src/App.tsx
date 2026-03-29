@@ -2,11 +2,11 @@ import { Button } from "@/components/ui/button"
 
 export function App() {
   return (
-    <div className=" flex flex-col w-screen h-screen gap-5 p-5">
+    <div className="">
       {/* Row 1 */}
-      <Button variant="default" >why</Button>
-      <Button variant="destructive">why</Button>
-      <Button disabled>why</Button>
+      <Button variant="default" >Submit</Button>
+      <Button variant="destructive">Delete</Button>
+      <Button disabled>Disabled</Button>
     </div>
   )
 }
