@@ -128,9 +128,7 @@
   --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
   --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
   --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
-  --tracking-normal: 0em;
---neumorphic-white: oklch(1 0 0 / 0.8);
-    --neumorphic-shadow: oklch(0 0 0 / 0.07);     /* Dark shadow */
+  --tracking-normal: 0em;    /* Dark shadow */
 }
 
 .dark {
@@ -189,14 +187,7 @@
   --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
 }
 
-@layer utilities {
-  .shadow-neumorphic {
-    /* The magic: Top-left light, Bottom-right dark */
-    box-shadow: 
-      -4px -4px 10px var(--neumorphic-white),
-      4px 4px 10px var(--neumorphic-shadow);
-  }
-}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
