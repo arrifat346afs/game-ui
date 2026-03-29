@@ -4,23 +4,24 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "group/button inline-flex shrink-0 items-center justify-center rounded-md border border-transparent bg-clip-padding text-xs/relaxed font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/30 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-2 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  "group/button inline-flex shrink-0 items-center justify-center rounded-lg bg-clip-padding text-xs/relaxed font-medium whitespace-nowrap transition-all duration-200 outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/80",
+        default:
+          "bg-[var(--neu-bg)] text-primary shadow-[6px_6px_12px_color-mix(in_oklch,var(--neu-bg)_40%,black),-6px_-6px_12px_color-mix(in_oklch,var(--neu-bg)_40%,white)] hover:shadow-[8px_8px_16px_color-mix(in_oklch,var(--neu-bg)_40%,black),-8px_-8px_16px_color-mix(in_oklch,var(--neu-bg)_40%,white)] focus-visible:ring-2 focus-visible:ring-ring/50 active:translate-y-0 active:shadow-[inset_4px_4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,black),inset_-4px_-4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,white)]",
         outline:
-          "border-border hover:bg-input/50 hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:bg-input/30",
+          "border border-[color-mix(in_oklch,var(--foreground)_15%,transparent)] bg-[var(--neu-bg)] text-[var(--foreground)] shadow-[6px_6px_12px_color-mix(in_oklch,var(--neu-bg)_40%,black),-6px_-6px_12px_color-mix(in_oklch,var(--neu-bg)_40%,white)] hover:shadow-[8px_8px_16px_color-mix(in_oklch,var(--neu-bg)_40%,black),-8px_-8px_16px_color-mix(in_oklch,var(--neu-bg)_40%,white)] focus-visible:ring-2 focus-visible:ring-ring/50 active:translate-y-0 active:shadow-[inset_4px_4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,black),inset_-4px_-4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,white)]",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
+          "bg-[var(--neu-bg)] text-secondary shadow-[6px_6px_12px_color-mix(in_oklch,var(--neu-bg)_40%,black),-6px_-6px_12px_color-mix(in_oklch,var(--neu-bg)_40%,white)] hover:shadow-[8px_8px_16px_color-mix(in_oklch,var(--neu-bg)_40%,black),-8px_-8px_16px_color-mix(in_oklch,var(--neu-bg)_40%,white)] focus-visible:ring-2 focus-visible:ring-ring/50 active:translate-y-0 active:shadow-[inset_4px_4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,black),inset_-4px_-4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,white)]",
         ghost:
-          "hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50",
+          "bg-transparent text-[var(--foreground)] shadow-none hover:bg-[color-mix(in_oklch,var(--neu-bg)_95%,white)] hover:shadow-[4px_4px_8px_color-mix(in_oklch,var(--neu-bg)_30%,black),-4px_-4px_8px_color-mix(in_oklch,var(--neu-bg)_30%,white)] focus-visible:ring-2 focus-visible:ring-ring/50 active:translate-y-0 active:shadow-[inset_2px_2px_4px_color-mix(in_oklch,var(--neu-bg)_30%,black),inset_-2px_-2px_4px_color-mix(in_oklch,var(--neu-bg)_30%,white)]",
         destructive:
-          "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
-        link: "text-primary underline-offset-4 hover:underline",
-        neu: "rounded-xl border border-[color-mix(in_oklch,var(--foreground)_10%,transparent)] bg-[var(--neu-bg)] text-[var(--foreground)] shadow-[4px_4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,black),-4px_-4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,white)] hover:shadow-[6px_6px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,black),-6px_-6px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,white)] active:shadow-[inset_4px_4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,black),inset_-4px_-4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,white)] active:not-aria-[haspopup]:translate-y-0 [&_svg]:text-[var(--foreground)]",
+          "bg-[var(--neu-bg)] text-destructive shadow-[6px_6px_12px_color-mix(in_oklch,var(--neu-bg)_40%,black),-6px_-6px_12px_color-mix(in_oklch,var(--neu-bg)_40%,white)] hover:shadow-[8px_8px_16px_color-mix(in_oklch,var(--neu-bg)_40%,black),-8px_-8px_16px_color-mix(in_oklch,var(--neu-bg)_40%,white)] focus-visible:ring-2 focus-visible:ring-destructive/50 active:translate-y-0 active:shadow-[inset_4px_4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,black),inset_-4px_-4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,white)]",
+        link: "bg-transparent text-primary underline-offset-4 shadow-none hover:underline",
+        neu: "bg-[var(--neu-bg)] text-[var(--foreground)] shadow-[6px_6px_12px_color-mix(in_oklch,var(--neu-bg)_40%,black),-6px_-6px_12px_color-mix(in_oklch,var(--neu-bg)_40%,white)] hover:shadow-[8px_8px_16px_color-mix(in_oklch,var(--neu-bg)_40%,black),-8px_-8px_16px_color-mix(in_oklch,var(--neu-bg)_40%,white)] focus-visible:ring-2 focus-visible:ring-ring/50 active:translate-y-0 active:shadow-[inset_4px_4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,black),inset_-4px_-4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,white)] [&_svg]:text-[var(--foreground)]",
         "neu-pressed":
-          "rounded-xl border border-[color-mix(in_oklch,var(--foreground)_10%,transparent)] bg-[var(--neu-bg)] text-[var(--foreground)] shadow-[inset_4px_4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,black),inset_-4px_-4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,white)] active:not-aria-[haspopup]:translate-y-0 [&_svg]:text-[var(--foreground)]",
+          "bg-[var(--neu-bg)] text-[var(--foreground)] shadow-[inset_4px_4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,black),inset_-4px_-4px_8px_color-mix(in_oklch,var(--neu-bg)_40%,white)] hover:shadow-[inset_5px_5px_10px_color-mix(in_oklch,var(--neu-bg)_40%,black),inset_-5px_-5px_10px_color-mix(in_oklch,var(--neu-bg)_40%,white)] focus-visible:ring-2 focus-visible:ring-ring/50 [&_svg]:text-[var(--foreground)]",
       },
       size: {
         default:
