@@ -5,7 +5,7 @@ export function App() {
   return (
     <main className="flex gap-2 p-4">
       <Nave />
-      <div>
+      <div className="space-y-2 space-x-2">
         {/* Row 1 */}
         <Button variant="default">Submit</Button>
         <Button variant="destructive">Delete</Button>
