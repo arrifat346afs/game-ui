@@ -3,7 +3,7 @@ import { Button } from "./ui/button"
 
 export default function Nave() {
   return (
-    <nav className="flex items-center justify-between p-4">
+    <nav className="flex items-center justify-between py-4 px-12" >
       <h1 className="font-bold">Neumorphism UI</h1>
       <Button  size="icon">
         <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
