@@ -18,9 +18,9 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
         link: "text-primary underline-offset-4 hover:underline",
-        neu: "rounded-xl border border-[color-mix(in_oklch,var(--foreground)_10%,transparent)] bg-[var(--neu-bg)] text-[var(--foreground)] shadow-[4px_4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,black),-4px_-4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,white)] hover:shadow-[6px_6px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,black),-6px_-6px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,white)] active:shadow-[inset_4px_4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,black),inset_-4px_-4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,white)] [&_svg]:text-[var(--foreground)]",
+        neu: "rounded-xl border border-[color-mix(in_oklch,var(--foreground)_10%,transparent)] bg-[var(--neu-bg)] text-[var(--foreground)] shadow-[4px_4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,black),-4px_-4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,white)] hover:shadow-[6px_6px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,black),-6px_-6px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,white)] active:shadow-[inset_4px_4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,black),inset_-4px_-4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,white)] active:not-aria-[haspopup]:translate-y-0 [&_svg]:text-[var(--foreground)]",
         "neu-pressed":
-          "rounded-xl border border-[color-mix(in_oklch,var(--foreground)_10%,transparent)] bg-[var(--neu-bg)] text-[var(--foreground)] shadow-[inset_4px_4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,black),inset_-4px_-4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,white)] [&_svg]:text-[var(--foreground)]",
+          "rounded-xl border border-[color-mix(in_oklch,var(--foreground)_10%,transparent)] bg-[var(--neu-bg)] text-[var(--foreground)] shadow-[inset_4px_4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,black),inset_-4px_-4px_0px_0px_color-mix(in_oklch,var(--neu-bg)_80%,white)] active:not-aria-[haspopup]:translate-y-0 [&_svg]:text-[var(--foreground)]",
       },
       size: {
         default:
