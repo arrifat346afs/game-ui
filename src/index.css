@@ -88,7 +88,7 @@
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --color-border: oklch(97.614% 0.00011 271.152);
-  --color-edge: oklch(83.048% 0.00109 12.403 / 0.09);
+  --color-edge: oklch(6.72% 0.00001 271.152 / 0.09);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
