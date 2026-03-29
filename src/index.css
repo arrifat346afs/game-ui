@@ -84,7 +84,7 @@
 
 :root {
   --neu-bg: var(--background);
-  --background: oklch(1 0 0);
+  --background: oklch(91.357% 0.00106 11.782);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
