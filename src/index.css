@@ -126,7 +126,7 @@
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
   --shadow-color: oklch(0 0 0);
-  --shadow-color-light: oklch(1 0 0 / 0.8);
+  --shadow-color-light: var(--color-white); ;
   --shadow-opacity: 0.1;
   --shadow-blur: 3px;
   --shadow-spread: 0px;
