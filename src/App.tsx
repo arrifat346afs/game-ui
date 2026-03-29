@@ -6,7 +6,7 @@ export function App() {
       {/* Row 1 */}
       <Button variant="default" >why</Button>
       <Button variant="destructive">why</Button>
-     
+      <Button disabled>why</Button>
     </div>
   )
 }
