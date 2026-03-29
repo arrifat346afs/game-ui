@@ -9,9 +9,6 @@ export function App() {
       <Button variant="secondary">Secondary</Button>
       <Button variant="ghost">Ghost</Button>
       <Button variant="destructive">Destructive</Button>
-      <Button variant="link">Link</Button>
-      <Button variant="neu">Neu</Button>
-      <Button variant="neu-pressed">Neu Pressed</Button>
      
     </div>
   )
