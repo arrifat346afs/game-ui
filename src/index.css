@@ -89,13 +89,8 @@
   --card: oklch(1 0 0);
   --color-border: oklch(97.614% 0.00011 271.152);
 
-
-
   --color-edge: oklch(0% 0 0 / 0.274);
 
-
-
-  
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
@@ -159,13 +154,13 @@
   --shadow-rised:
     2px 2px 3px var(--shadow-color), -2px -2px 3px var(--shadow-color-light),
     inset 0px 0px 0px var(--shadow-color),
-    inset 0px 0px 0px var(--shadow-color-light),inset 1px 1px 2px var(--color-edge);
+    inset 0px 0px 0px var(--shadow-color-light),
+    inset 1px 1px 2px var(--color-edge);
 
   --shadow-inset:
     1px 1px 2px var(--shadow-color), -1px -1px 2px var(--shadow-color-light),
     inset 2px 2px 3px var(--shadow-color),
-    inset -2px -2px 3px var(--shadow-color-light)
-    ;
+    inset -2px -2px 3px var(--shadow-color-light);
 }
 
 .dark {
