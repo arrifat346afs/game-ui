@@ -3,9 +3,9 @@ import Nave from "./components/Nave"
 
 export function App() {
   return (
-    <main>
+    <main className="flex gap-2 p-4">
       <Nave />
-      <div className="flex gap-2 p-4">
+      <div>
         {/* Row 1 */}
         <Button variant="default">Submit</Button>
         <Button variant="destructive">Delete</Button>
